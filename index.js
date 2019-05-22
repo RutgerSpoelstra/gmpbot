@@ -2,7 +2,7 @@ const botconfig = require("./botconfig.json");
 const Discord = require("discord.js");
 const Client = new Discord.Client();
 
-Client.on("ready", async () => {
+Client.on("ready", () => {
     console.log('${Client.user.username} is online!');
     Client.user.setActivity('itbykev.nl', { type: 'PLAYING' })
 });
